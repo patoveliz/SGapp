@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media all and (min-width:320px){
+
+    /* BODY */
+    body{
+        min-height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        background-color: #b5dbdb;
+    }
+
+     /* BANNER */
+    .banner{
+        margin: 5px;
+    }
+    .bannerChico{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .bannerGrande{
+        display: none;
+    }
+
+    /* Contenedor MAIN */
+    .cont-main{
+        margin: 5px;
+        flex: 1;
+    }
+
+
+    /* CARTILLA */
+    .titulo{
+        font-size: large;
+        padding-bottom: 25px;
+        padding-top: 15px;
+        text-decoration: underline;
+        text-align: center;
+        color: #069492;
+        
+    }
+    .cartilla{
+        border-collapse: collapse;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        font-size: small;
+        background-color: #74CCCC;
+    }
+    .col-th{
+        color: #037d81;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+    .fil-td b{
+        font-weight: 600;
+    }
+    .fil-td, .col-th{
+        border: 1px black solid;
+        padding: 3px;
+    }
+
+
+    /* FOOTER */
+    .footer{
+        background-color: #069492; /* Cambia el color de fondo del footer según tus preferencias */
+        color: #fff; /* Cambia el color del texto del footer según tus preferencias */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center; /* Centra el contenido del footer horizontalmente */
+        width: 100%; /* Establece el ancho al 100% para que el footer ocupe todo el ancho de la página */
+        position: fixed; /* Fija el footer en la parte inferior de la ventana gráfica */
+        bottom: 0;
+        font-size: small;
+    }
+
+}
+
+@media all and (min-width:768px){
+
+    /* BANNER */
+    .bannerChico{
+        display: none;
+    }
+    .bannerGrande{
+        display: flex;
+        max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    }
+    .banner {
+        display: flex; /* Utiliza flexbox */
+        justify-content: center; /* Centra horizontalmente el contenido */
+    }
+
+
+    /* CARTILLA */
+    .titulo{
+        font-size: 2rem;
+    }
+    .cartilla{
+        font-size: large;
+    }
+    .fil-td, .col-th{
+        padding: 5px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
