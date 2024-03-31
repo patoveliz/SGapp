@@ -30,7 +30,7 @@
 
     /* Contenedor MAIN */
     .cont-main{
-        margin: 5px;
+        margin: 6px;
         flex: 1;
     }
 
@@ -52,16 +52,16 @@
         width: 100%;
         max-width: 100%;
         overflow-x: auto;
-        font-size: small;
+        font-size: 16px;
         background-color: #74CCCC;
     }
     .col-th{
         color: #037d81;
         text-decoration: underline;
-        font-weight: 700;
+        font-weight: 800;
     }
     .fil-td b{
-        font-weight: 600;
+        font-weight: 700;
     }
     .fil-td, .col-th{
         border: 1px black solid;
@@ -77,11 +77,15 @@
         padding-bottom: 15px;
         text-align: center; /* Centra el contenido del footer horizontalmente */
         width: 100%; /* Establece el ancho al 100% para que el footer ocupe todo el ancho de la página */
-        position: fixed; /* Fija el footer en la parte inferior de la ventana gráfica */
+        position: relative ; /* Fija el footer en la parte inferior de la ventana gráfica */
         bottom: 0;
-        font-size: small;
+        font-size: 1rem;
+        font-weight: bold;
     }
-
+    .footer a{
+        text-decoration: none;
+        color: #74CCCC;
+    }
 }
 
 @media all and (min-width:768px){
@@ -107,6 +111,7 @@
     }
     .cartilla{
         font-size: large;
+        width: 90%;
     }
     .fil-td, .col-th{
         padding: 5px;
